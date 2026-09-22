@@ -1,0 +1,19 @@
+HARP-VLA
+
+This release contains inference code adapted from OpenVLA-OFT (MIT):
+https://github.com/moojink/openvla-oft
+Copyright (c) 2025 Moo Jin Kim, Chelsea Finn, Percy Liang.
+The upstream MIT license is reproduced in LICENSE.
+
+CALVIN evaluation code retains its source MIT notice, including:
+Copyright (c) 2021 Oier Mees
+Copyright (c) 2024 Bytedance Ltd. and/or its affiliates
+https://github.com/mees/calvin
+
+We acknowledge UniVLA (Apache-2.0) for the upstream research and implementation:
+https://github.com/OpenDriveLab/UniVLA
+
+External dependencies retain their respective licenses. The distributed model
+uses a Llama 2 language backbone, and the Llama 2 license and acceptable use
+policy apply to those weights. The code license does not relicense the weights.
+https://ai.meta.com/llama/license/
