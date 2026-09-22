@@ -2,7 +2,7 @@
 
 Official inference repository for **HARP-VLA**.
 
-[Project website (source)](https://github.com/PuzhenYuan/HARP-VLA-website) | [Paper](https://arxiv.org/abs/2605.31234) | [Checkpoint](https://huggingface.co/ypz21/HARP_VLA_calvin)
+[Project website](https://puzhenyuan.github.io/HARP-VLA-website/) | [Paper](https://arxiv.org/abs/2605.31234) | [Checkpoint](https://huggingface.co/ypz21/HARP_VLA_calvin)
 
 [![HARP-VLA overview](figure/MainFigure.png)](figure/MainFigure.pdf)
 
