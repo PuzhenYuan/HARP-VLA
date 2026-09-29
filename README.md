@@ -47,6 +47,12 @@ python -m experiments.robot.calvin.evaluate \
 
 The checkpoint argument also accepts `ypz21/HARP_VLA_calvin` directly. The default evaluation runs 1,000 five-task sequences with up to 360 environment steps per task and seed 7. Each inference call predicts a chunk of ten relative actions from the static camera, gripper camera and proprioception.
 
+Reference result on CALVIN ABC→D (1,000 sequences, RTX 3090):
+
+| 1 task | 2 tasks | 3 tasks | 4 tasks | 5 tasks | Average length |
+| --- | --- | --- | --- | --- | --- |
+| 99.8% | 96.7% | 91.3% | 84.4% | 75.9% | **4.481** |
+
 Results are written to a timestamped directory under `outputs/calvin`: `result.json` contains average successful sequence length, success rates for completing 1–5 tasks, and per-task counts; `success_rate.txt` records progress. Add `--num_sequences 1` for a short smoke run, or `--debug True` to save rollout GIFs. Use `--output_dir` to choose another output directory.
 
 ## Acknowledgements

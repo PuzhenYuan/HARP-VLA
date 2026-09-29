@@ -50,7 +50,8 @@ def load_policy(checkpoint="ypz21/HARP_VLA_calvin", device="cuda:0"):
     vla.vision_backbone.set_num_images_in_input(2)
     with (path / "normalization.json").open() as stream:
         vla.norm_stats = json.load(stream)
-    vla = vla.to(device).eval()
+    # Match the reference evaluation dtype for parameters and buffers.
+    vla = vla.to(device=device, dtype=torch.bfloat16).eval()
     processor = PrismaticProcessor(
         image_processor=PrismaticImageProcessor.from_pretrained(path),
         tokenizer=AutoTokenizer.from_pretrained(path, trust_remote_code=False),
